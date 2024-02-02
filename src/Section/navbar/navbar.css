@@ -1,0 +1,54 @@
+
+nav {
+  padding:15px 8% ;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  & ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    align-items: center;
+    & li {
+      margin: 0 25px;
+    }
+  }
+}
+
+nav a {
+  color: white;
+}
+
+nav i {
+  background-color: black;
+  color: white;
+  display: none;
+}
+
+@media (max-width: 450px) {
+  nav i {
+    display: block;
+  }
+  nav ul {
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    right: 5px;
+    top: 40px;
+    gap: 10px;
+    padding: 10px;
+    transition: all 1s;
+    border: 1px solid black;
+    border-radius: 13px;
+    background-color: white;
+
+    & a {
+      background-color: transparent;
+    }
+
+    & li {
+      color: black;
+    }
+  }
+}

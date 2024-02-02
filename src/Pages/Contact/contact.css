@@ -1,0 +1,10 @@
+#contact{
+    height: 80vh;
+    width: 90vw;
+    display: grid;
+    place-items: center;
+
+   &  h1{
+    font-size: 50px;
+    }
+}
